@@ -83,7 +83,7 @@ def create_rfm_df(df):
     return rfm_df
 
 # LOAD DATASET
-all_df = pd.read_csv('all_data.csv')
+all_df = pd.read_csv('./dashboard/all_data.csv')
 
 # format data to datetime
 all_df.sort_values(by='order_approved_at', inplace=True)
