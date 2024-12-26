@@ -83,10 +83,11 @@ def create_rfm_df(df):
     return rfm_df
 
 # LOAD DATASET
-all_df = pd.read_csv('./dashboard/all_data.csv')
+all_df = pd.read_csv('./dashboard/all_data.csv', sep=",")
 
 # format data to datetime
-all_df.sort_values(by='order_approved_at', inplace=True)
+print(all_df.columns)
+all_df.sort_values(by="order_approved_at", inplace=True)
 all_df.reset_index(inplace=True)
 
 datetime_column = ['order_purchase_timestamp', 'order_approved_at']
