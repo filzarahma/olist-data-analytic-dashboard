@@ -173,7 +173,7 @@ with st.sidebar:
             value=[min_date, max_date]
         )
         # Jika end_date tidak diinput, gunakan max_date sebagai default
-        if not end_date:
+        if end_date.isnull():
             end_date = max_date
 
         # Validasi rentang waktu
