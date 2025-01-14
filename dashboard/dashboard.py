@@ -285,12 +285,13 @@ with col1[1]:
                     "product_category": st.column_config.TextColumn(
                         "Product Category",
                     ),
-                    "quantity": st.column_config.ProgressColumn(
-                        "Quantity",
-                        format="%f",
-                        min_value=0,
-                        max_value=sum_order_items_df['quantity'].max(),
-                     )}
+                    # "quantity": st.column_config.ProgressColumn(
+                    #     "Quantity",
+                    #     format="%f",
+                    #     min_value=0,
+                    #     max_value=sum_order_items_df['quantity'].max(),
+                    #  )
+                     }
                  )
     
     st.subheader('📉 Worst Selling')
@@ -303,12 +304,13 @@ with col1[1]:
                     "product_category": st.column_config.TextColumn(
                         "Product Category",
                     ),
-                    "quantity": st.column_config.ProgressColumn(
-                        "Quantity",
-                        format="%f",
-                        min_value=0,
-                        max_value=sum_order_items_df['quantity'].max(),
-                     )}
+                    # "quantity": st.column_config.ProgressColumn(
+                    #     "Quantity",
+                    #     format="%f",
+                    #     min_value=0,
+                    #     max_value=sum_order_items_df['quantity'].max(),
+                    #  )
+                     }
                  )
 # ORDER COUNT
 col2 = st.columns(8)
