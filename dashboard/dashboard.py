@@ -124,7 +124,7 @@ def create_status_count_df(df):
 # create dataframe for payment type contribution
 def create_payment_type_df(df):
     payment_type_df = df.groupby('order_id').first().groupby('payment_type').payment_value.sum().sort_values(ascending=False).reset_index()
-    
+    payment_type_df['payment_type'] = payment_type_df['payment_type'].str.replace('_', ' ')
     return payment_type_df
 
 # create dataframe for rfm
@@ -486,8 +486,8 @@ with col4[1]:
     # Menambahkan label di atas setiap grafik
     fig.update_layout(
         title="Top 5 Customers Based on RFM Metrics",
-        xaxis_title="ID Pelanggan",
-        yaxis_title="Nilai",
+        xaxis_title="Customer ID",
+        yaxis_title="Value",
         height=600,
         width=1200,
         showlegend=False,
