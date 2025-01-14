@@ -1,2 +1,0 @@
-https://github.com/filzarahma/olist-data-analytic-dashboard.git
-https://olist-data-analytic-dashboard.streamlit.app/
