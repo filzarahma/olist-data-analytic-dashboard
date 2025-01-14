@@ -280,11 +280,14 @@ with col1[1]:
     st.dataframe(top_selling_df,
                  column_order=("product_category", "quantity"),
                  hide_index=True,
-                 width=None,
+                 width=500,
                  column_config={
                     "product_category": st.column_config.TextColumn(
                         "Product Category",
                     ),
+                    "quantity": st.column_config.TextColumn(
+                        "Quantity",
+                    )
                     # "quantity": st.column_config.ProgressColumn(
                     #     "Quantity",
                     #     format="%f",
@@ -299,11 +302,14 @@ with col1[1]:
     st.dataframe(worst_selling_df,
                  column_order=("product_category", "quantity"),
                  hide_index=True,
-                 width=None,
+                 width=500,
                  column_config={
                     "product_category": st.column_config.TextColumn(
                         "Product Category",
                     ),
+                    "quantity": st.column_config.TextColumn(
+                        "Quantity",
+                    )
                     # "quantity": st.column_config.ProgressColumn(
                     #     "Quantity",
                     #     format="%f",
