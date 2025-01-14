@@ -276,8 +276,8 @@ with col1[0]:
 
 with col1[1]:
     st.subheader('📈 Top Selling')
-
-    st.dataframe(sum_order_items_df.sort_values(by='quantity', ascending=False).head(5),
+    top_selling_df = sum_order_items_df.sort_values(by='quantity', ascending=False).head(5).copy()
+    st.dataframe(top_selling_df,
                  column_order=("product_category", "quantity"),
                  hide_index=True,
                  width=None,
@@ -294,8 +294,8 @@ with col1[1]:
                  )
     
     st.subheader('📉 Worst Selling')
-
-    st.dataframe(sum_order_items_df.sort_values(by='quantity', ascending=True).head(5),
+    worst_selling_df = sum_order_items_df.sort_values(by='quantity', ascending=True).head(5).copy()
+    st.dataframe(worst_selling_df,
                  column_order=("product_category", "quantity"),
                  hide_index=True,
                  width=None,
