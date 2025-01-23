@@ -19,3 +19,7 @@ pip install -r requirements.txt
 ## Run steamlit app
 ```
 streamlit run dashboard/dashboard.py
+```
+
+You can see the dashboard in this link: https://olist-ecommerce-analytic-dashboard.streamlit.app/
+
