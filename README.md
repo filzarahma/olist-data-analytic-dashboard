@@ -43,4 +43,4 @@ streamlit run dashboard/dashboard.py
 
 ## Links
 - GitHub Repository: [https://github.com/filzarahma/olist-data-analytic-dashboard/](https://github.com/filzarahma/olist-data-analytic-dashboard/)
-- Live Dashboard: [https://olist-data-analytic-dashboard.streamlit.app/](https://olist-data-analytic-dashboard.streamlit.app/)
+- Live Dashboard: [https://olist-ecommerce-analytic-dashboard.streamlit.app/](https://olist-ecommerce-analytic-dashboard.streamlit.app/)
